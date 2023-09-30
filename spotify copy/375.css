@@ -1,0 +1,156 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: yellow;
+}
+
+nav {
+    background-color: black;
+    width: 100vw;
+    height: 55px
+
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    margin: 1px;
+    padding: 7px;
+}
+
+ul li img {
+    width: 25px;
+    height: 25px;
+    border-radius: 40px;
+}
+
+ul li a {
+    font-size: 16px;
+}
+
+.song_container {
+    width: 96vw;
+    border-radius: 8px;
+
+}
+.song_list {
+    display: flex;
+    flex-direction: column;
+    /* column-gap: 10px; */
+    gap: 7px;
+    /* align-items: center; */
+    justify-content: center;
+
+    margin: 2px;
+    padding: 0px 2px;
+}
+
+
+.song_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    width: 80vw;
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 0px 4px;
+    /* justify-content: center; */
+}
+.heading{
+    font-size: 20px;
+}
+
+.song_info img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 4px;
+
+}
+span .song_name{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 20px;
+    /* font-family: 'Square Peg', cursive; */
+
+}
+.song_duration{
+    position: absolute;
+    left: 223px;
+    font-size: 20px;
+}
+.miniplay i{
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: -11px;
+    position: absolute;
+    left: 302px;
+}
+.music_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    margin: auto;
+
+}
+
+.seekbar {
+    width: 93vw;
+    margin: 8px auto;
+    cursor: pointer;
+    /* color: white; */
+}
+
+.music_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+
+.music_buttons img {
+    width: 50px;
+    height: 50px;
+    margin: 0px 5px;
+    opacity: 1;
+    position: absolute;
+    bottom: -50px;
+    left: 54px;
+}
+
+#trac_name{
+    display: none;
+}
+
+#pause_play{
+    cursor: pointer;
+    margin: 0px 3px;
+    font-size: 1rem;
+}
+
+#prev_play{
+    cursor: pointer;
+    margin: 0px 3px;
+    font-size: 1rem;
+}
+
+#next_play{
+    cursor: pointer;
+    margin: 0px 3px;
+    font-size: 1rem;
+
+}

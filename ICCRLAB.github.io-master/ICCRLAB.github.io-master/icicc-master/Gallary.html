@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ICCRlab</title>
+    <link rel = "icon" href =  "icontitle.png" type = "image/x-icon"> 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+<script src="https://kit.fontawesome.com/21d3d308ff.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/ICCrlab_mail_css.css">
+<script src="js/iccrlab_dynamicity_adder.js"></script>
+
+</head>
+<body>
+    <div id="content_wrapper">
+        <div id="sidebar">
+            <ul>
+                <li class="list-group-item list-group-item-danger" onclick="closeSideBar()" style="text-align:center;"><i class="far fa-times-circle" onclick="closeSideBar()"></i></li>
+                <li class="list-group-item"><a href="index.html">Home</a></li>
+                <li class="list-group-item"><a href="">E-adhyaye</a></li>
+                <li class="a_d_b list-group-item">About &nbsp;&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                <ul class="show_display" id="about_id">
+                    <li class="list-group-item"><a href="about_iccr_lab.html">About ICCRLab</a></li>
+                    <li class="list-group-item"><a href="about_institute.html">About Institute</a></li>
+                </ul>
+                    <!-- end of about -->
+                </li>
+                <li class="list-group-item list-group-item-success">
+                  <a href="">Conference Venue</a>
+                  </li> 
+                <li class="p_d_d list-group-item">Papers &nbsp;&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                    <ul class="show_display" id="papers_id">
+                        <li class="list-group-item"><a href="">Call For Papers</a></li>
+                        <li class="list-group-item"><a href="">Paper Submission</a></li>
+                    </ul>
+                        <!-- end of papers -->
+                    </li>
+                
+
+                <li class="list-group-item"><a href="">Registrations</a></li>
+                <li class="list-group-item"><a href="">Publications</a></li>
+
+                <li class="c_d_b list-group-item">Committee &nbsp;&nbsp;&nbsp;<i class="fas fa-caret-down"></i>
+                    <ul class="show_display" id="committee_id">
+                        <li class="list-group-item"><a href="">Steering Committee</a></li>
+                        <li class="list-group-item"><a href="">Advisory And Technical Program Committee</a></li>
+                    </ul>
+                        <!-- end of Committee -->
+                    </li>
+
+                <li class="list-group-item"><a href="">Downloads</a></li>
+
+                <li class="list-group-item"><a href="">Special Sessions</a></li>
+
+                <li class="list-group-item">
+                  <a href="">Gallary</a>
+                  </li>                  
+
+                  <li class="list-group-item">
+                  <a href="">Sponsorship</a>
+                  </li>                  
+                  <li class="list-group-item">
+                  <a href="">Speakers</a>
+                  </li>                  
+                  <li class="list-group-item">
+                  <a href="">Accommodation</a>
+                  </li> 
+                <!-- end of main unordered list -->
+            </ul>
+            <!--end of side bar division  -->
+        </div>
+
+        
+        <div id="logo_header">
+            <!-- <h1> frontend</h1> -->
+            <div class="jumbotron">
+              <div class="container">
+                <div class="row row-content">
+                  <div class="col-12 col-sm sol-md mb-0 text-center">
+                    <img src="gallary/cropped-iccrlab-icon.png" alt="iccrlablogo" class="img-fluid sponsor_image">
+                    <img src="gallary/pit-logo.png" alt="pitlogo" class="img-fluid sponsor_image">
+                  </div>
+                  <div class="col-12 col-sm sol-md text-center">
+                    <h1>ICCRLab</h1>
+                    <p>Intelligent Communication And Computational Research</p>
+                    <!-- <p>punjab institute of Technology</p> -->
+                  </div>
+
+                  <div class="col-12 col-sm sol-md text-center">
+                    <img src="gallary/logospain.png" alt="" class="img-fluid sponsor_image">
+                    <img src="gallary/Springer.png" alt="" class="img-fluid sponsor_image">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="navigation_bar">
+            <i class="fas fa-bars" id="side_bar_toggler" onclick="openSidebar()"></i>
+
+            <nav class="navbar navbar-expand-sm   navbar-light bg-light" id="large_screen_navigation">
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">E-adhyaye</a>
+                      </li>
+                    <li class="nav-item dropdown dmenu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                          About
+                        </a>
+                        <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item" href="about_iccr_lab.html">About ICCRLab</a>
+                          <a class="dropdown-item" href="#">About Institute</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown dmenu">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                          Papers
+                        </a>
+                        <div class="dropdown-menu sm-menu">
+                          <a class="dropdown-item" href="#">Call For Papers</a>
+                          <a class="dropdown-item" href="#">Paper Submission</a>
+                        </div>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Registrations</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Publications</a>
+                      </li>
+                    <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Committee
+                    </a>
+                    <div class="dropdown-menu sm-menu">
+                      <a class="dropdown-item" href="#">Steering Committee</a>
+                      <a class="dropdown-item" href="#">Advisory And Technical committee</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link list-group-item-danger" href="#">Conference Venue</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Downloads</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gallary</a>
+                  </li>                  
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sponsorship</a>
+                  </li>                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Speakers</a>
+                  </li>                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Accommodation</a>
+                  </li>                  
+                  </ul>
+                </div>
+            </nav>
+            <!-- end of navigation bar -->
+        </div>
+
+        <div id="inside_content">
+            <div class="about_cont">
+                <img src="gallary/pit-logo.png" alt="iccrlab_logo" style="display:block;margin: 0 auto;">
+                <h1 class="text-center" style="margin-top: 20px;">About ICCRLab</h1>
+                <p style="padding: 20px;font-size: 20px;">Punjab Institute of Technology, Rajpura (Punjab) is a constituent college of Maharaja Ranjit Singh Punjab Technical University, Bathinda to provide quality education at an affordable price at par with IITs or NITs to the students of Punjab. Punjab Institute of Technology has been started with an objective of imparting quality technical education to students both at an undergraduate and postgraduate level so as to cater to the needs of industry at national and international level. The targets do not end at just producing engineers/Managers with Bachelor’s or Master’s program but also to encourage research and to have R&D section in various disciplines.</p>
+                <p style="padding: 20px;font-size: 20px;">PITR has state of the art infrastructure which acquires near about 13.7 acres land & 4.77-acre land available for providing Faculty Residential & Hostels. The institute has well equipped, lecture hall, air-conditioned seminar halls, library, laboratories, etc. The institute takes a keen interest in research activities to help the students and faculty in their research endeavors.</p>
+            </div>
+          <!-- end of inside content -->
+        </div>
+
+        <footer id="footer_main">
+            <section class="sec">
+                <h2 class="footer_h2 footer_p_i_h2_a">Contact Details</h2>
+                <br><br><i class="fas fa-envelope" style="font-size: larger;"></i><i class="footer_p_i_h2_a footer_p_i_a">&nbsp;&nbsp;Email</i>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:icicc.editor@gmail.com" class="footer_p_i_h2_a footer_p_i_a">icicc.editor@gmail.com</a>
+                <p></p>
+                <br><i class="fas fa-map-marker-alt" style="font-size: larger;"></i><i class="footer_p_i_h2_a footer_p_i_a">&nbsp;&nbsp;Address</i>
+                <p class="footer_p_i_h2_a footer_p_i_a">&nbsp;&nbsp;&nbsp;Punjab Institute Of Technology (PIT), Rajpura</p>
+            </section>
+            <section class="sec" id="social_media">
+                <h2 class="footer_h2 footer_p_i_h2_a">Social Media</h2><br>
+                &nbsp;&nbsp;<a href=""><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;<a href=""><i class="fab fa-facebook-square"></i></a>
+            </section>
+            <section class="sec Copyright">
+                <p class="footer_p_i_h2_a footer_p_i_a">Copyright © Intelligent Communication and Computational Research | All Rights Reserved | <a href="https://www.linkedin.com/in/manavarthi-venkat-rao/" style="color: teal;cursor: pointer;" target="_blank">Website Developed By M Venkat Rao</a> |</p>
+            </section>
+        </footer>
+    </div>
+
+    <script>
+    
+    var navigation = document.getElementById('navigation_bar');
+window.onscroll = function () {
+    if(window.pageYOffset > 200){
+        navigation.style.position = "fixed";
+        navigation.style.top = 0;
+    }else{
+        navigation.style.position = 'static';
+        navigation.style.top = 100;
+    }
+    }
+</script>
+</body>
+</html>

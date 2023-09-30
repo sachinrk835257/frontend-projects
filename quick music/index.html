@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my quick music web</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
+    <link
+        rel="stylesheet"
+
+        href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css"
+      >
+    <!-- google fonts -->
+</head>
+<body>
+    <center>
+
+        <div id="container">
+            <div class="song_container">
+                <!-- <audio controls src="1.mp3"></audio> -->
+                <input type="range" value="0" min="0" max="100" class="progressbar" id="seekbar">
+                <div class="trac"></div>
+                <div id="play_pause">
+
+                    <i class="fa fa-play-circle fa-2x play"></i>
+                </div>
+                <!-- <i class="fa-solid fa-rotate-right"></i> -->
+
+                <input type="range" value="40" min="0" max="100" class="vol">
+                <i class="fa-regular fa-volume fa-2x"></i>
+
+            </div>
+        </div>
+        
+    </center>
+</body>
+<script src="script.js"></script>
+</html>

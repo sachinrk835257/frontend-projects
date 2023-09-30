@@ -1,0 +1,98 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+#jumbo-images1{
+  position:relative;
+  margin-right:0;
+}
+#hrr{
+  border: 1px solid;
+}
+.sponsor_image{
+  position: relative;
+  width:130px;
+  height:130px;
+}
+.jumbotron{
+  padding-bottom: 40px;
+  padding-top: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 0 0 0 0 ;
+  background-image: linear-gradient(45deg,teal,black);
+  color: white;
+}
+h1{
+  font-size:1.2rem;
+}
+.footer {
+    /* background-color: #252323; */
+  margin: 0px auto;
+  padding: 20px 0px;
+  color:white;
+}
+.dropdown-menu{
+  background:#343A40;
+}
+.navigation_bar{
+  z-index:100;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.dates{
+  
+}
+.marquees{
+  background: lightgrey;
+}
+#Keynote-speakers{
+  font-size: 50px;
+  font-stretch: expanded;
+  font-weight: bold;
+}
+.Keynotes{
+  padding-bottom: 70px;
+  background: #A8F1F1;
+}
+#sp-images{
+  padding-left: 30px;
+  padding-right: 25px;
+  margin: 0;
+}
+#sp-images2{
+  padding-left: 40px;
+  padding-right: 20px;
+  margin: 0;
+  width: 180px;
+}
+#pp-images{
+  padding: 10px 30px 10px 30px;
+}
+.dropdown-item{
+  color:white
+}
+.dropdown-item:hover{
+  background: lightgrey;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}

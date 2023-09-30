@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posrt-folio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="ham">
+            <img src="hamburger-menu-icon.png" alt="hamberger-icon">
+        </div>
+        <div class="cross">
+            <img src="close-icon.png" alt="cross">
+        </div>
+        <div id="sidebar" class="navbar">
+            <ul class="nav-items">
+                <li><a class="nav-links" href="index.html"> Home </a></li>
+                <li><a class="nav-links" href="About.html"> About </a></li>
+                <li><a class="nav-links" href="About.html"> Services </a></li>
+                <li><a class="nav-links" href="My Intro.html"> My Intro </a></li>
+                <li><a class="nav-links" href="Blog.html"> Blog </a></li>
+                <li><a class="nav-links" href="Contact Us.html"> Contact Us </a></li>
+            </ul>
+        </div>
+
+        <div class="contact-container">
+            <p>Contact Us</p>
+            <div class="contact-form">
+                <div>
+                    <label for="name">Name: </label><br>
+                    <input class="name-input input-form" type="text" id="name" placeholder="ENTER YOUR NAME">
+                </div>
+                <div>
+
+                    <label for="email">Email: </label><br>
+                    <input class="email-input input-form" type="email" id="email" placeholder="ENTER YOUR EMAIL">
+                </div>
+                <div>
+                    <label for="phno">Phone Number: </label><br>
+                    <input class="phno-input input-form" type="text" id="phno" placeholder="ENTER YOUR PHONE NUMBER">
+
+                </div>
+                <div>
+                    <label for="male">Gender: Male</label>
+                    <input type="radio" name="gender" id="male" checked>
+                    <label for="female"> Female</label>
+                    <input type="radio" name="gender" id="female">
+
+                </div>
+                <div>
+                    <label for="dropdown">Gender: </label>
+                    <select name="options" id="dropdown">
+                        <option value="option 1">male</option>
+                        <option value="option 1">Female</option>
+                        <option value="option 1">Others</option>
+                        <option value="option 1">Others1</option>
+                        <option value="option 1">thers2</option>
+
+                    </select>
+                </div>
+
+                <div>
+
+                    <label for="Feedback">Feedback: </label><br>
+                    <textarea name="feedback-area" id="Feedback" cols="30" rows="10"
+                        placeholder="enter your feedback ATtention! don not share important information" style="width: 66.5vw;
+                    height: 22vw;
+                "></textarea>
+                </div>
+
+                <div>
+                    <button class="btn-2" onclick="submit()">Submit</button>
+                    <button class="btn-3">Reset</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="time-stamp">
+        <p class="current-time"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

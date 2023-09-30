@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.m-auto{
+    margin: auto;
+}
+.heading {
+    font-size: 2.1rem;
+    /* text-align: left; */
+    margin: 1vw 1vw;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+    text-transform: capitalize;
+}
+.box-style{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 473px;
+    height: auto;
+    color: white;
+    background-color: #3c5bbf;
+    border: 2px solid black;
+    box-shadow: -4px 5px 2px grey;
+    border-radius: 10px;
+    margin: 1vw 2vw;
+}
+.seperator-1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* border: 0; */
+    /* width: 47px; */
+    border-top: 1px solid black;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    /* background-color: yellow; */
+}
+.rows{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    width: 100%;
+    margin: 10px;
+}
+.steering-text{
+    font-size: 1rem;
+    margin: 10px 15px;
+    /* font-family: ; */
+    font-family: 'Merriweather', serif;
+}
+.steering-headers{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 31px;
+
+}

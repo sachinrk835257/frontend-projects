@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify clone ,playing music only</title>
+    <!-- css styling -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="375.css" media="screen and (max-width:375px">
+
+    <!-- Load FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Blaka&family=Fira+Sans:wght@300&family=Josefin+Sans:wght@300&family=Square+Peg&display=swap"
+        rel="stylesheet">
+    <style>
+        @media only screen and (max-width: 540px) {
+            .song_info {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                /* row-gap: 15px; */
+                column-gap: 20px;
+                width: 70vw;
+                border: 2px solid white;
+                border-radius: 10px;
+                padding: 0px 8px;
+                /* justify-content: center; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="navbar">
+                <li><img src="spotifylogo.png" alt="error"></li>
+                <li><a href="##">Home</a></li>
+                <li><a href="##">About Us</a></li>
+                <li><a href="##">Services</a></li>
+                <li><a href="##">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="song_container">
+        <div class="song_information">
+
+            <h2 class="heading">List of Songs</h2>
+            <div class="song_list">
+                <div class="song_info">
+                    <span><img src="" id="cover1" alt="error"></span><span class="song_name1 song_name">let this is
+                        song</span><span class="song_duration">05:02</span><span class="miniplay"
+                        onclick="song_index0()" id="0"><i class="fa fa-play-circle fa-2x"></i>
+                    </span>
+                </div>
+
+                <div class="song_info">
+                    <span><img src="" id="cover2" alt="error"></span><span class="song_name2 song_name">let this is
+                        song</span><span class="song_duration">05:02</span><span class="miniplay"
+                        onclick="song_index1()" id="1"><i class="fa fa-play-circle fa-2x"></i>
+                    </span>
+                </div>
+
+                <div class="song_info">
+                    <span><img src="" id="cover3" alt="error"></span><span class="song_name3 song_name">let this is
+                        song</span><span class="song_duration">05:02</span><span class="miniplay"
+                        onclick="song_index2()" id="2"><i class="fa fa-play-circle fa-2x"></i>
+                    </span>
+                </div>
+
+                <div class="song_info">
+                    <span><img src="" id="cover4" alt="error"></span><span class="song_name4 song_name">let this is
+                        song</span><span class="song_duration">05:02</span><span class="miniplay"
+                        onclick="song_index3()" id="3"><i class="fa fa-play-circle fa-2x"></i>
+                    </span>
+                </div>
+
+                <div class="song_info">
+                    <span><img src="" id="cover5" alt="error"></span><span class="song_name5 song_name">let this is
+                        song</span><span class="song_duration">05:02</span><span class="miniplay"
+                        onclick="song_index4()" id="4"><i class="fa fa-play-circle fa-2x"></i>
+                    </span>
+                </div>
+
+                <div class="song_info">
+                    <span><img src="" id="cover6" alt="error"></span><span class="song_name6 song_name">let this is
+                        song</span><span class="song_duration">05:02</span><span class="miniplay"
+                        onclick="song_index5()" id="5"><i class="fa fa-play-circle fa-2x"></i>
+                    </span>
+                </div>
+
+                <div class="song_info">
+                    <span><img src="" id="cover7" alt="error"></span><span class="song_name7 song_name">let this is
+                        song</span><span class="song_duration">05:02</span><span class="miniplay"
+                        onclick="song_index6()" id="6"><i class="fa fa-play-circle fa-2x"></i>
+                    </span>
+                </div>
+
+                <div class="song_info">
+                    <span><img src="" id="cover8" alt="error"></span><span class="song_name8 song_name">let this is
+                        song</span><span class="song_duration">05:02</span><span class="miniplay"
+                        onclick="song_index7()" id="7"><i class="fa fa-play-circle fa-2x"></i>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="music_items" id="bg_img">
+            <input type="range" class="seekbar" id="progressbar" value="0" min="0" max="100">
+            <div class="music_buttons">
+                <img src="music trac.gif" id="gif" alt="error">
+                <div>
+                    <span id="trac_name">let song name</span>
+                </div>
+                <!-- <span class="song_name1 song_name"></span> -->
+                <div id="prev_play">
+                    <i onclick="prev_play()" class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div id="pause_play">
+                    <i class="fa fa-play-circle fa-3x"></i>
+                </div>
+                <div id="next_play">
+                    <i onclick="next_play()" class="fa fa-step-forward fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

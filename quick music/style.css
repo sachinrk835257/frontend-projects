@@ -1,0 +1,58 @@
+.song_container{
+    background-image: url(cover1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 21vw;
+    height: 21vw;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    position: relative;
+}
+.song_container audio{
+    width: 15vw;
+    height: 2vw;
+    /* border-radius: 10px;
+    background-color: black; */
+    color: white;
+    position: absolute;
+    top: 253px;
+    left: 41px;
+}
+.play{
+    color: red;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 245px;
+    left: 118px;
+}
+.vol{
+    width: 46px;
+    height: 5px;
+    position: absolute;
+    top: 259px;
+    left: 172px;
+
+}
+.trac{
+    background-image: url('music trac.gif');
+    background-size: cover;
+    width: 32px;
+    height: 22px;
+    position: absolute;
+    top: 250px;
+    left: 60px;
+    border-radius: 6px;
+    opacity: 0;
+}
+.progressbar{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.fa-volume{
+    color: red;
+    position: absolute;
+    top: 249px;
+    left: 228px;
+}

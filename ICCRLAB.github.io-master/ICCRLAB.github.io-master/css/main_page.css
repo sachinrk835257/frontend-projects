@@ -1,0 +1,207 @@
+html{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+}
+/* main divsio */
+#maindiv {
+    transition: margin-left .5s;
+    width: 100vw;
+}
+/* header */
+.header {
+    position: relative;
+}
+.header nav{
+    position: fixed;
+    width: 100%;
+    background-color: turquoise;
+    padding: 5px;
+}
+/* logo_icicc decoraton and alignment */
+.fa-bars {
+    padding: 7px;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(37, 35, 35);
+}
+#logo_icicc {
+    font-style: normal;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: oblique;
+    margin-left: 20%;
+    padding: 10px;
+    display: inline;
+}
+@media (min-width: 450px) and (max-width: 770px){
+    #logo_icicc {
+        margin-left: 30%;
+    }
+}
+/* making sidebar responsive */
+@media (max-width : 770px){
+    #side_bar {
+        width: 0px;
+        height: 100%;
+        background-color: white;
+        position: fixed;
+        left: 0;
+        top: 0em;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+}
+
+@media (min-width: 770px){
+    #side_bar {
+        display: none;
+    }
+    #sidebar_button {
+        display: none;
+    }
+}
+#side_bar ul{
+    padding: 0%;
+    margin: 0%;
+}
+.fa-times-circle {
+    color: lightgray;
+    font-size: xx-large;
+}
+ul {
+    margin: 0%;
+    padding: 0%;
+}
+#side_bar ul li {
+    padding: 10px 10px 10px 10px;
+    font-size: x-large; 
+    text-align: center;
+    border-bottom: 1px solid gray;
+    color: gray;
+}
+#side_bar ul li a{
+    text-decoration: none;
+    color: black;
+    color: gray;
+}
+.toggleButton {
+    background-color: white;
+}
+/*  */
+#slideshow {
+    width: 100%;
+    height: 40vh;
+    background-image: url('image2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.5s linear;
+}
+@media (max-width: 770px){
+#slideshow {
+    height: 40vh;
+    background-image: url('image2.jpeg');
+    border: 5px solid white;
+}
+}
+@media (min-width: 770px){
+    #slideshow{
+        border: 10px solid white;
+        height: 70vh;
+        background-image: url('image2.jpeg');
+        margin-top: 130px;
+    }
+}
+/* container styling */
+.container {
+    /* position: fixed; */
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 770px){
+    .container {
+        display: none;
+    }
+}
+ul{
+    list-style-type: none;
+}
+.show {
+    display: none;
+}
+.container {
+    margin-top: 20px;
+}
+.container ul li {
+    width: 150px;
+    border: 1px solid none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: black;
+    font-size: 19px;
+    transition: background 0.4s linear;
+    /* display: block; */
+}
+.container ul li:hover {
+    display: inline-block;
+    background-color: lightgrey;
+    z-index: 100;
+}
+.container ul ul{
+    display: none;
+}
+.container ul li:hover > ul {
+    display: inline-block;
+    z-index: 100;
+    opacity: 5;
+}
+  /* footer */
+#footer{
+    background-color: rgb(37, 35, 35);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 10px;
+    padding-top: 3vh;
+}
+.sec{
+    padding: 10px;
+}
+#urgentNotification{
+    margin-top: 65px;
+}
+
+/* footer_p_i_h2_a */
+.footer_p_i_h2_a{
+    font-style: normal;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* footer_p_i_a */
+.footer_p_i_a{
+    font-size: larger;
+}
+.footer_h2{
+    border-bottom: 1px solid teal;
+    display: inline-block;
+}
+#footer .fas{
+    color: teal;
+}
+#social_media .fab{
+    font-size: xxx-large;    color: rgb(53, 148, 226);
+}
+.Copyright{
+    display: inline-block;
+    border-bottom: 1px solid teal;
+}

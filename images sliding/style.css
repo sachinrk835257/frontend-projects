@@ -1,0 +1,130 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(228, 196, 154);
+    overflow: hidden;
+}
+
+#container {}
+
+#navbar {
+    margin-top: 10px;
+    padding: 0px 5px;
+    width: 100vw;
+    height: 15vh;
+    background-color: black;
+}
+
+/* nav ul::before {
+    background: url(desktop3.jpg) repeat-x;
+    background-size: contain;
+    opacity: 0.5;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 800vw;
+    height: 80px;
+    z-index: -1;
+
+} */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+}
+
+ul li {
+    margin: 34px;
+    padding: 7px;
+}
+
+li a {
+    font-size: 2vw;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
+li a:hover{
+    color: tomato;
+}
+
+/* .nav_anchors a{
+    text-decoration: none;
+} */
+
+
+#image_container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+    height: 80vh;
+    position: absolute;
+    left: 3vw;
+    /* background-color: red; */
+    animation: side_images 2s linear infinite;
+}
+
+#image_container img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 95vw;
+    height: 80vh;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+#image_container img:hover{
+    box-shadow: 6px 6px 2px rgb(199, 240, 138);
+    animation: bordercurvy 1s linear infinite;
+}
+@keyframes bordercurvy {
+    0%{
+        border-radius: 20px;
+    }
+    100%{
+        border-radius: 80px;
+    }
+    
+}
+    /* display: flex; */
+@keyframes side_images {
+    0%{
+        left: 3vw;
+    }
+    25%{
+        left: 0vw;
+    }
+    75%{
+        left: 6vw;
+    }
+
+    100%{
+        left: 3vw;
+    }
+}
+
+/* .img-2 {
+    width: 40vw;
+    height: 40vh;
+}
+
+.img-3 {
+    width: 40vw;
+    height: 40vh;
+} */
+
+.img-4 {
+    width: 40vw;
+    height: 40vh;
+}

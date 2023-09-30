@@ -1,0 +1,90 @@
+.m-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center{
+    text-align: center;
+}
+.nav-link-color{
+    color: white;
+}
+.nav-link-color:hover{
+    color: rgb(223, 150, 101);
+    /* background-color: rgb(194, 186, 186); */
+}
+.pos-sticky{
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+.facebook-icon{
+    background-image: url('https://w7.pngwing.com/pngs/561/460/png-transparent-fb-facebook-facebook-logo-social-media-icon-thumbnail.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    margin: 2px 10px;
+    border-radius: 50px;
+    background-color: red;
+}
+.twitter-icon{
+    background-image: url('https://w7.pngwing.com/pngs/708/311/png-transparent-icon-logo-twitter-logo-twitter-logo-blue-social-media-area-thumbnail.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    margin: 2px 10px;
+    border-radius: 50px;
+    background-color: red;
+}
+.linkedin-icon{
+    background-image: url('https://w7.pngwing.com/pngs/602/665/png-transparent-in-icon-social-media-linkedin-computer-icons-linkedin-blue-text-trademark-thumbnail.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    margin: 2px 10px;
+    border-radius: 50px;
+    background-color: red;
+}
+
+.gmail-icon{
+    background-image: url('https://w7.pngwing.com/pngs/549/715/png-transparent-web-development-logo-website-web-design-symmetry-internet-thumbnail.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    margin: 2px 10px;
+    border-radius: 50px;
+    background-color: red;
+
+}
+
+
+/* icons 
+source link
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+gmail
+<i class="fa-solid fa-envelope"></i>
+
+address
+<i class="fa-solid fa-location-dot"></i>
+
+PHONE
+<i class="fa-thin fa-phone"></i>
+
+LINK
+<i class="fa-thin fa-link"></i>
+
+FACEBOOK
+<i class="fa fa-facebook fa-lg"></i>
+
+twitter
+<i class="fa fa-twitter fa-lg"></i>
+
+linkedin
+<i class="fa fa-linkedin fa-lg"></i>
+*/

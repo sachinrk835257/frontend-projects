@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100vw;
+    height: 50vh;
+    /* background-color: red; */
+    background: url('blog3.jpg');
+    background-size: cover;
+    position: relative;
+    
+
+}
+
+nav{
+    background-color: rgb(253, 255, 255);
+    width: 80vw;
+    height: 20vh;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 15px;
+}
+nav u li{
+}
+.logo-sector{
+    display: flex;
+    align-items: center;
+}
+nav ul li img{
+    width: 61px;
+    height: 61px;
+    border-radius: 42px;
+    margin: 5px 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.image-sector1{
+    background-color: aqua;
+
+}
+.image-sector2{
+    background-color: rgb(226, 126, 151);
+
+}
+.image-sector3{
+    background-color: rgb(198, 238, 55);
+
+}
+.image-sector4{
+    background-color: aqua;
+}
+.image-sector5{
+    background-color: rgb(80, 95, 221);
+}
+.image-sector6{
+    background-color: aqua;
+}
+.image-sector7{
+    background-color: rgb(79, 235, 65);
+}

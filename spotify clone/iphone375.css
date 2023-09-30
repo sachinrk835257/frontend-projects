@@ -1,0 +1,51 @@
+body{
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+
+nav ul li a {
+    color: white;
+    font-family: 'Square Peg', cursive;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+nav ul li a:hover {
+    color: rgb(107, 38, 197);
+    text-decoration: underline;
+    font-size: 1.3rem;
+    background-color: rgb(84, 87, 88);
+    border-radius: 9px;
+    padding: 2px;
+    font-family: 'Baloo Bhai 2', cursive;}
+.logo {
+    height: 40px;
+    width: 40px;
+    margin: 5px 0px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.logoarea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: rgb(88, 84, 84);
+    /* margin-top: 10px; */
+    margin: 10px auto;
+    padding: 5px;
+    color: white;
+    font-size: 0.8rem;
+    width: 70vw;
+    height: 21px;
+
+}
+

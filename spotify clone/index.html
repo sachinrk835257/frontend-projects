@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify awesome music</title>
+    <!-- Load FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Blaka&family=Fira+Sans:wght@300&family=Josefin+Sans:wght@300&family=Square+Peg&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="iphone375.css" media="screen and (max-width:700px)">
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar" id="navmenu">
+            <li><img src="spotifylogo.png" class="logo" alt="#spotify"></li>
+            <li><a href="#">Spotify</a></li>
+            <li><a href="#">HOme</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songbanner">
+            <h2>My songs are here </h2>
+            <div class="list">
+                <img src="cover4.PNG" class="cover" alt=""><span class="1mp"> NAKHRE</span><span class="time">05:45
+                </span><span><i class="fa fa-play-circle fa-2x" onclick="playpause()"></i></span>
+            
+                <!-- <i class="fa fa"></i> -->
+            </div>
+            <div class="list">
+                <img src="cover1.jpg" class="cover" alt=""><span class="1mp"> ASHIQUE AA GYI</span><span
+                    class="time">05:45
+                </span><span><i class="fa fa-play-circle fa-2x" onclick="playpause()"></i></span>
+            </div>
+            <div class="list">
+                <img src="cover4.PNG" class="cover" alt=""><span class="1mp">NAKHRE</span><span class="time">05:45
+                </span><span><i class="fa fa-play-circle fa-2x" onclick="playpause()"></i></span>
+            </div>
+            <div class="list">
+                <img src="cover3.PNG" class="cover" alt=""><span class="1mp">BALMA POWERFUL</span><span
+                    class="time">05:45
+                </span><span><i class="fa fa-play-circle fa-2x" onclick="playpause()"></i></span>
+            </div>
+            <div class="list">
+                <img src="cover2.PNG" class="cover" alt=""><span class="1mp">Z BLACK</span><span class="time">05:45
+                </span><span><i class="fa fa-play-circle fa-2x" onclick="playpause()"></i></span>
+            </div>
+            <div class="list">
+                <img src="cover1.jpg" class="cover" alt=""><span class="1mp">ASHIQUE AA GYI</span><span
+                    class="time">05:45
+                </span><span><i class="fa fa-play-circle fa-2x" onclick="playpause()"></i></span>
+            </div>
+            <div class="list">
+                <img src="cover4.PNG" class="cover" alt=""><span class="1mp"> NAKHRE</span><span class="time">05:45
+                </span><span><i class="fa fa-play-circle fa-2x" onclick="playpause()"></i></span>
+            </div>
+            <div class="list">
+                <img src="cover3.PNG" class="cover" alt=""><span class="1mp">BALMA POWERFUL</span><span
+                    class="time">05:45
+                </span><span><i class="fa fa-play-circle fa-2x" onclick="playpause()"></i></span>
+            </div>
+            <div class="list">
+                <img src="cover2.PNG" class="cover" alt=""><span class="1mp">Z BLACK</span><span class="time">05:45
+                </span><span><i class="fa fa-play-circle fa-2x"></i></span>
+            </div>
+
+        </div>
+        <div class="songlist">
+
+        </div>
+    </div>
+    <!-- <svg class="svg-icon" viewBox="0 0 20 20">
+        <path d="M16.899,3.05c-0.085-0.068-0.192-0.095-0.299-0.074L7.947,4.779c-0.17,0.034-0.291,0.182-0.291,0.353v7.364c-0.494-0.536-1.199-0.873-1.983-0.873c-1.491,0-2.704,1.213-2.704,2.704s1.213,2.704,2.704,2.704c1.491,0,2.705-1.213,2.705-2.704V7.952l7.933-1.659v4.399c-0.494-0.535-1.199-0.873-1.983-0.873c-1.491,0-2.704,1.213-2.704,2.704c0,1.492,1.213,2.705,2.704,2.705c1.49,0,2.704-1.213,2.704-2.705V3.33C17.031,3.221,16.982,3.119,16.899,3.05 M5.673,16.311c-1.094,0-1.983-0.889-1.983-1.983s0.889-1.983,1.983-1.983c1.095,0,1.983,0.889,1.983,1.983S6.768,16.311,5.673,16.311 M14.327,14.508c-1.095,0-1.983-0.889-1.983-1.984c0-1.094,0.889-1.982,1.983-1.982c1.094,0,1.983,0.889,1.983,1.982C16.311,13.619,15.421,14.508,14.327,14.508 M16.311,5.558L8.377,7.217V5.428l7.933-1.659V5.558z"></path>
+    </svg> -->
+    <footer class="bottom">
+        <input type="range" class="myprogressbar" id="progressbar" value="0" min="0" max="100">
+        <div class="play_icons">
+            <img src="music trac.gif" alt="error" id="musicgif" class="musictrac">
+            <span class="song_name"></span>
+            
+            <div class="step_backward" onclick="play_prev_track()">
+                
+                <i class="fa fa-step-backward fa-2x"></i>
+            </div>
+            <div class="pause_play" id="masterplay">
+                
+                <i class="fa fa-play-circle fa-5x"></i>
+            </div>
+            <div class="step_forward"  onclick="play_next_track()">
+                
+                <i class="fa fa-step-forward fa-2x"></i>
+            </div>
+        </div>
+            
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

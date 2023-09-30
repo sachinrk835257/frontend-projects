@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+   
+}
+body{
+    overflow: hidden;
+}
+#sky{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* width: 100vw; */
+    height: 100vh;
+    position: relative;
+
+}
+.trees{
+    background-image: url(trees.png);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+    width: 100vw;
+    height: 121vh;
+    position: absolute;
+    top: -12vw;
+    bottom: 20px;
+
+}
+.car{
+    background-image: url(car_body.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 23vh;
+    position: absolute;
+    bottom: 52px;
+    /* top: 240px; */
+    left: 324px;
+    z-index: 1;
+    animation: carshake 0.3s linear infinite;
+}
+@keyframes carshake {
+    0%{
+        transform: translateX(0px);
+        /* transform: translateY(0px); */
+    }
+    50%{
+        transform: translateX(-5px);
+        /* transform: translateY(-3px); */
+    }
+    100%{
+        transform: translateX(0px);       
+        /* transform: translateY(0px);     */
+    }
+    
+}
+.wheel{
+    animation: wheelrotation 0.3s linear infinite;
+}
+
+.wheel1{
+    width: 3vw;
+    height: 3vw;
+    position: relative;
+    bottom: -20px;
+    left: 22.3px;
+    /* animation: shakewheel 1s linear infinite; */
+}
+.wheel2{
+    width: 2.8vw;
+    height: 2.8vw;
+    position: relative;
+    bottom: -21px;
+    left: 79.4px;
+    /* animation: shakewheel 1s linear infinite; */
+}
+@keyframes wheelrotation{
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes shakewheel {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.track{
+    background-image: url(track.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 900vw;
+    height: 24vh;
+    position: absolute;
+    bottom: 0vh;
+    animation: carmove 10s linear infinite;
+}
+@keyframes carmove{
+    100%{
+        /* width: 800vh; */
+        transform: translateX(-500vw);
+
+    }
+}

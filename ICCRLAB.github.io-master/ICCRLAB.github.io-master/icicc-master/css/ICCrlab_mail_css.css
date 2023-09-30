@@ -1,0 +1,276 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content_wrapper {
+    padding: 0px;
+    /* overflow: scroll; */
+}
+#sidebar{
+    width: 250px;
+    height: 100%;
+    overflow-x: hidden;
+    top: 0;
+    left: -250px;
+    position: fixed;
+    transition: 0.5s;
+}
+/* #logo_header h1{
+    padding: 10px;
+} */
+#logo_header{
+    width: 100%;
+    background-color: orange;
+    transition: 0.5s;
+}
+#navigation_bar{
+    width: 100%;
+    background: grey;
+    transition: 0.5s;
+    z-index: 100;
+}
+#inside_content{
+    width: 100%;
+    transition: 0.5s;
+}
+#side_bar_toggler{
+    padding: 10px;
+    font-size: 35px;
+}
+
+@media (min-width: 770px){
+    #sidebar{
+        display: none;
+    }
+    #side_bar_toggler{
+        display: none;
+    }
+    #carousal_division{
+        border: 20px solid white;
+    }
+    .carousel-item{
+        height: 70vh;
+    } 
+    .carousel-item img{
+        height: 70vh;
+    }
+    
+}
+@media (max-width: 768px){
+#large_screen_navigation{
+    display: none;
+}
+#carousal_division{
+    border: 10px solid white;
+}
+}
+
+/* css for footer */
+#footer_main{
+    background-color: rgb(37, 35, 35);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 20px;
+    transition: 0.5s;
+}
+.sec{
+    padding: 10px;
+}
+@media (min-width: 1500px){
+#footer-main{
+    padding: 0%;
+}
+}
+.footer_p_i_h2_a{
+
+    font-style: normal;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+.footer_p_i_a{
+    font-size: larger;
+}
+.footer_h2{
+    border-bottom: 1px solid teal;
+    display: inline-block;
+}
+#footer_main .fas{
+    color: teal;
+}
+#social_media .fab{
+    font-size: xxx-large;
+    color: rgb(53, 148, 226);
+    /* padding-top: 20px; */
+}
+.Copyright{
+    display: inline-block;
+    border-bottom: 1px solid teal;
+}
+/* end of footer css */
+
+.social-part .fa{
+    padding-right:20px;
+}
+ul li a{
+    margin-right: 20px;
+}
+.show_display {
+    display: none;
+}
+#sidebar a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* container header logos */
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.sponsor_image{
+    width: 49%;
+}
+#iccrlab_logo{
+    height: 20vh;
+}
+.about_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+
+}
+.about_container_item{
+    border: 1px solid white;
+    padding: 20px;
+}
+.about_container_item p{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: grey;
+}
+#banner-image{
+    margin-top: 50px;
+}
+@media (max-width: 770px){
+    .about_container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+    .about_container_item{
+        border: 1px solid white;
+        padding: 20px;
+    }   
+}
+.about_speakers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(310px,1fr));
+    padding: 15px;
+    grid-gap: 20px;
+    grid-auto-rows: 400px;
+}
+.about_speaker_item{
+    background-color: rgb(168, 241, 241);
+    border-radius: 12px;
+}
+.sponsors_container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+}
+@media (min-width: 770px){
+    .sponsors_container{
+        display: grid;
+        grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+    }   
+}
+.Proceeding_partners_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.important_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    /* grid-auto-rows: 400px; */
+    padding: 15px;
+    grid-gap: 10px;
+}
+.important_item{
+    background-color: lightgray;
+    border-radius: 12px;
+    padding: 10px;
+}
+.important_container .list-group-item-success{
+    border-radius: 12px;
+}
+marquee p{
+    padding: 10px;
+}
+marquee p a{
+    font-weight: bold;
+    color: white;
+}
+marquee p a:hover{
+    color: black;
+}
+.about_cont{
+    padding: 30px;
+    margin-bottom: 20px;
+    color: rgb(37, 35, 35);
+}
+
+.publications_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 15px;
+    padding: 20px;
+}
+.publications_item{
+height: 200px;
+border-radius: 12px;
+height: 300px;
+}
+.publications_item i{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 70px;
+    color: cornflowerblue;
+}
+.publications_item p{
+    color: rgb(121, 112, 112);
+    font-size: larger;
+}
+
+.call_for_papers_containers{
+    padding: 20px;
+}
+.call_for_papers_containers li{ 
+    font-size: large;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.bold_text{
+    font-weight: bold;
+}
+.streaming_c span{
+    font-size: 20px;
+}
+.streaming_c h2{
+    margin-top: 20px;
+}
+#inside_content p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+#navigation_bar a{
+    font-weight: bold;
+}
+#navigation_bar a:hover{
+    color: rgb(58, 56, 56);
+}
+/* about_institute.html */
+/* about_iccr_lab.html */
+/* index.html */
+/* publications.html */
+/* call_for_papers.html */

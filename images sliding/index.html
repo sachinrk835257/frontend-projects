@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sliding images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <nav id="navbar">
+            <ul class="navbar-list">
+                <li class="navbar_links nav-anchors"><a href="#" target="_blank">Home</a></li>
+                <li class="navbar_links nav-anchors"><a href="#" target="_blank">Services</a></li>
+                <li class="navbar_links nav-anchors"><a href="#" target="_blank">About Us</a></li>
+                <li class="navbar_links nav-anchors"><a href="#" target="_blank">Contact Us</a></li>
+            </ul>
+        </nav>
+        <center>
+
+            <div id="image_container">
+                <!-- <img class="slide-image img-1" src="welcm.jpg" alt=""> -->
+                <!-- <img class="slide-image img-2" src="introduction.jpg" alt=""> -->
+                <!-- <img class="slide-image img-3" src="thank you.jpg" alt=""> -->
+                <!-- <img class="slide-image img-4" src="thank you.png" alt=""> -->
+            </div>
+        </center>
+    </div>
+    <script>
+        window.onload=function(){
+
+        
+        var img_list = ['welcm.jpg','introduction.jpg','thank you.jpg','thank you.png']
+        console.log('welcome to my web page');
+        var image_container = document.getElementById('image_container');
+        var img = document.createElement('img');
+        // img.classList.add('img-animation')
+        image_container.appendChild(img)
+        var i=0
+        setInterval(run,1500)        
+        function run(){
+            if (i<img_list.length){
+                // console.log("value of i: ",i)
+                img.setAttribute('src', img_list[i])
+                i++;
+                if (i==(img_list.length-1)){
+                    i=0
+                }
+            }
+            }
+        // console.log('succesfully done......')
+    }    
+    </script>
+</body>
+
+</html>

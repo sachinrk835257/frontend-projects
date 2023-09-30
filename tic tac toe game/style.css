@@ -1,0 +1,161 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: antiquewhite;
+}
+nav{
+    background-color: black;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ul li {
+    list-style: none;
+    margin: 3vh -1vw;
+    padding: 0vh 3vw;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4vw;
+}
+ul li a:hover{
+    color: red;
+    font-size: 1.3vw;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+.gameinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 2vw;
+    font-size: 1.8vw;
+}
+.my_turn{
+    font-size: 2.1vw;
+    animation: fontch 2s ease-in-out 0.3s infinite;
+
+}
+@keyframes fontch{
+    0%{
+        color: black;
+    }
+    50%{
+        color: rgb(245, 10, 10);
+    }
+    100%{
+        color: black;
+    }
+}
+#mainbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    /* border: 2px solid black; */
+}
+.box_column{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.box{
+    display: flex;
+    width: 11vw;
+    height: 11vw;
+    background-color: white;
+    color: black;
+    font-size: 6vw;
+    border: 3px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1{
+    border-top: 0px;
+    border-left: 0px;
+
+}
+#box1:hover{
+    background-color: rgb(192, 171, 212);
+
+}
+#box2:hover{
+    background-color: rgb(192, 171, 212);
+
+}
+#box3:hover{
+    background-color: rgb(192, 171, 212);
+
+}
+#box4:hover{
+    background-color: rgb(192, 171, 212);
+
+}
+#box5:hover{
+    background-color: rgb(192, 171, 212);
+
+}
+#box6:hover{
+    background-color: rgb(192, 171, 212);
+
+}
+#box7:hover{
+    background-color: rgb(192, 171, 212);
+
+}
+#box8:hover{
+    background-color: rgb(192, 171, 212);
+
+}
+#box9:hover{
+    background-color: rgb(192, 171, 212);
+
+}
+
+#box2{
+    border-top: 0px;
+    /* border-left: 0px; */
+
+}
+#box3{
+    border-top: 0px;
+    border-right: 0px;
+    
+}
+#box4{
+    /* border-top: 0px; */
+    border-left: 0px;
+    
+}
+
+#box6{
+    /* border-top: 0px; */
+    border-right: 0px;
+}
+#box7{
+    border-bottom: 0px;
+    border-left: 0px;
+}
+#box8{
+    border-bottom: 0px;
+    /* border-left: 0px; */
+    
+}
+#box9{
+    border-bottom: 0px;
+    border-right: 0px;
+}

@@ -1,0 +1,183 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body { 
+    background-color: antiquewhite;
+}
+ 
+nav {
+    background-color: black;
+    /* position: -webkit-sticky; */
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 5px;
+    padding: 10px;
+}
+
+ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+ul li a:hover{
+    color: tomato;
+}
+
+/* song container */
+.song_container {
+    /* background-color: black; */
+    background-image: url('https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?cs=srgb&dl=pexels-daniel-reche-3721941.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* font-family: 'Square Peg', cursive; */
+    color: white;
+    margin: 10px auto;
+    width: 85vw;
+    padding: 15px 0px;
+    /* height: 75vh; */
+    border-radius: 20px;
+
+}
+
+.song_information {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* margin-bottom: 20px; */
+}
+
+.song_list {
+    display: flex;
+    flex-direction: column;
+    /* column-gap: 10px; */
+    gap: 15px;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    margin: 3px;
+    padding: 0px 3px;
+}
+
+.song_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* row-gap: 15px; */
+    column-gap: 20px;
+    width: 23vw;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0px 8px;
+    /* justify-content: center; */
+}
+
+.song_info:hover {
+    background-color: rgb(123, 235, 235);
+    color: red;
+    
+}
+
+.song_info img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+
+}
+span .song_name{
+    font-family: 'Baloo Bhai 2', cursive;
+    /* font-family: 'Square Peg', cursive; */
+
+}
+.song_duration{
+    position: absolute;
+    left: 365px;
+}
+
+.miniplay i{
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin-top: -11px;
+    position: absolute;
+    left: 415px;
+}
+
+.music_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    margin: auto;
+
+}
+
+.seekbar {
+    width: 93vw;
+    margin: 10px auto;
+    cursor: pointer;
+    /* color: white; */
+}
+
+.music_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+
+.music_buttons img {
+    width: 50px;
+    height: 50px;
+    margin: 0px 15px;
+    opacity: 0;
+}
+
+#trac_name{
+    margin: 0px 8px;
+    /* color: blue; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#pause_play{
+    cursor: pointer;
+    margin: 0px 8px;
+}
+
+#prev_play{
+    cursor: pointer;
+    margin: 0px 8px;
+}
+
+#next_play{
+    cursor: pointer;
+    margin: 0px 8px;
+}
