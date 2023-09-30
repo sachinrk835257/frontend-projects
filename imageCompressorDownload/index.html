@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resize and Compress</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="upload-box not-active">
+            <input id="file-input" type="file" accept="images/" hidden>
+            <!-- upload icon -->
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <p class="upload-text">Browse your file here</p>
+            <img src="" alt="">
+
+        </div>
+        <div class="manipulation-area">
+            <div class="column-input-area">
+                <div class="row row1-input-area">
+                    <p>Widht</p>
+                    <input id="width-input" type="number">
+                    <span><input id="ratio-aspect" name="ratio" class="checkbox-ratio" type="checkbox" checked><label for="ratio-aspect">With Ratio Aspect</label>
+                    </span>
+                </div>
+                <div class="row row2-input-area">
+                    <p>Height</p>
+                    <input id="height-input" type="number">
+                    <span>
+
+                        <input id="manual-aspect" name="ratio" class="checkbox-ratio quality" type="checkbox"><label for="manual-aspect">Reduce Quality</label>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+        <button class="download-btn">Download Image</button>
+    
+    </div>
+</body>
+</html>

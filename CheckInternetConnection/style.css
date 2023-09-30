@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aliceblue;
+}
+.popup{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    width: 407px;
+    transform: translateX(-50%);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 8px -4px;
+    border-top: 2px solid red;
+    transition: all 0.2s;
+
+}
+.show{
+    top: 3px;
+    transition: all 0.5s;
+
+}
+.fade-container{
+    background-color: #c1b3b3;
+    color: #d1c2c2;
+}
+
+.wifi-icon i{
+    display: flex;
+    font-size: 1.4rem;
+    color: red;
+    width: 54px;
+    justify-content: center;
+    margin-top: 6px;
+    margin-left: -37px;
+
+}
+
+.content p{
+    font-size: 1rem;
+    color: #857373;
+}

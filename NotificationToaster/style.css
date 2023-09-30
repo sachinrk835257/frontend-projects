@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(56, 48, 48);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.notification-bar {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.15rem;
+    padding: 3px;
+}
+
+.notification {
+    position: relative;
+    padding: 5px 8px;
+    margin: 3px 0px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.come{
+    animation: come 0.6s ease-in-out;
+}
+@keyframes come {
+    0%{
+        transform: translateX(105%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes go {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(105%);
+    }
+}
+.go{
+    animation: go 0.6s ease-in-out;
+    /* display: none; */
+}
+.notification:hover{
+    background-color: rgb(245, 240, 240);
+    box-shadow: 2px 2px 5px orange;
+    /* color: white; */
+}
+.notification span{
+    margin-right: 10px;
+}
+
+.hide{
+
+    animation: hide 0.7s ease-in-out;
+}
+@keyframes hide {
+    0%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(10%);
+    }
+    40%{
+        transform: translateX(-3%);
+    }
+    100%{
+        transform: translateX(105%);
+    }
+}
+
+.notification::before {
+    content: "";
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    height: 2px;
+    bottom: 0px;
+    animation: smallTheSize 3s linear 0.7s;
+}
+@keyframes smallTheSize {
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+.success-bar{
+    display: none;
+
+}
+.warning-bar{
+    display: none;
+
+}
+.info-bar{
+    display: none;
+
+}
+.danger-bar{
+    display: none;
+}
+.fa-circle-xmark{
+    color: rgb(194, 182, 182);
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+.fa-circle-xmark:hover{
+    color: black;
+}
+.success-bar span i{
+    color: #079d2e;
+    margin: 0px 3px 0px 0px;
+}
+.warning-bar span i{
+    color: #e2e535;
+    margin: 0px 3px 0px 0px;
+}
+.info-bar span i{
+    color: #2a6fd7;
+    margin: 0px 3px 0px 0px;
+}
+.danger-bar span i{
+    color: #e9083c;
+    margin: 0px 3px 0px 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 7px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px black;
+    padding: 9px;
+    width: 80px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.success-btn {
+    background-color: rgb(25, 235, 53);
+    color: white;
+}
+
+.success-btn:hover {
+    color: rgb(25, 235, 53);
+    border-color: rgb(25, 235, 53);
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(179, 139, 218);
+}
+
+.warning-btn {
+    background-color: rgb(233, 230, 56);
+    color: white;
+}
+
+.warning-btn:hover {
+    color: rgb(233, 230, 56);
+    border-color: rgb(233, 230, 56);
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(179, 139, 218);
+}
+
+.danger-btn {
+    background-color: rgb(219, 52, 23);
+    color: white;
+}
+
+.danger-btn:hover {
+    color: rgb(219, 52, 23);
+    border-color: rgb(219, 52, 23);
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(179, 139, 218);
+}
+
+.info-btn {
+    background-color: rgb(25, 141, 235);
+    color: white;
+}
+
+.info-btn:hover {
+    color: rgb(25, 141, 235);
+    border-color: rgb(25, 141, 235);
+    box-shadow: 2px 2px 4px rgb(179, 139, 218);
+    background-color: white;
+}

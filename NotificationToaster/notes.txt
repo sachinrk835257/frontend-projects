@@ -1,0 +1,13 @@
+success icon
+<i class="fa-light fa-circle-check"></i>
+warning icon
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+danger icon
+<i class="fa-solid fa-skull-crossbones"></i>
+
+info icon
+<i class="fa-duotone fa-circle-exclamation"></i>
+
+close icon
+<i class="fa-light fa-circle-xmark"></i>

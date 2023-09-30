@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Player -- </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media only screen and (max-width: 850px) {
+            .piano-header {
+                /* display: flex; */
+                flex-direction: column;
+                /* flex-wrap: wrap; */
+                align-items: center;
+                /* justify-content: space-between; */
+                margin-bottom: 40px;
+            }
+
+            .header {
+                margin: 10px;
+            }
+
+            .volume-slider {
+                margin-bottom: 10px;
+            }
+
+            body {
+                /* background-color: aqua; */
+            }
+
+            .piano-keys .key:nth-child(1) {
+                display: none;
+            }
+
+            .piano-keys .key:nth-child(2) {
+                display: none;
+            }
+
+            .piano-keys .key:nth-child(14) {
+                display: none;
+            }
+
+            .piano-keys .key:nth-child(15) {
+                display: none;
+            }
+
+            .piano-keys .white {
+                /* background-color: white; */
+                /* background: linear-gradient(to bottom, white 96%, #a59a9a); */
+                width: 40px;
+                height: 137px;
+                /* position: relative; */
+                /* border: 2px solid black; */
+                /* border-radius: 7px; */
+            }
+
+            .piano-keys .black {
+                /* background: linear-gradient(to bottom, black, rgb(112, 107, 107), black); */
+                width: 24px;
+                height: 84px;
+                /* position: absolute; */
+                /* position: relative; */
+                /* border-radius: 0px 0px 5px 5px; */
+                margin: 0px -10px;
+                /* z-index: 2; */
+            }
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="piano-header">
+            <div class="header">piano PLayer</div>
+            <div class="volume-slider">Volume <span><input type="range" min="0" max="1" value="0.5" step="any"></span>
+            </div>
+            <div class="show-keys"><label for="show-checkbox">Show Keys</label><span><input type="checkbox" name="show"
+                        id="show-checkbox"></span></div>
+        </div>
+        <div class="piano-keys">
+            <div id="a" class="key white"><span>a</span></div>
+            <div id="b" class="key black"><span>b</span></div>
+            <div id="c" class="key white"><span>c</span></div>
+            <div id="d" class="key black"><span>d</span></div>
+            <div id="e" class="key white"><span>e</span></div>
+            <div id="f" class="key black"><span>f</span></div>
+            <div id="g" class="key white"><span>g</span></div>
+            <!-- id="c" <div class="key black"></div> -->
+            <div id="h" class="key white"><span>h</span></div>
+            <!-- id="c" <div class="key black"></div> -->
+            <div id="i" class="key white"><span>i</span></div>
+            <div id="j" class="key black"><span>j</span></div>
+            <div id="k" class="key white"><span>k</span></div>
+            <div id="l" class="key black"><span>l</span></div>
+            <div id="m" class="key white"><span>m</span></div>
+            <div id="n" class="key black"><span>n</span></div>
+            <div id="o" class="key white"><span>o</span></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

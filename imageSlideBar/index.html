@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slide Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <style>
+        @media only screen and (max-width: 600px) {
+            .image-container img {
+                width: calc(100% / 1);
+                /* margin-left: 0px; */
+            }
+        }
+
+        @media only screen and (min-width:601px and max-width:910px) {
+            .image-container img {
+                width: calc(100%/2);
+                /* margin-left: 8px; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image-slidebar">
+        <div id="left" class="icons"><i class="fa-solid fa-greater-than"></i></div>
+        <div id="right" class="icons"><i class="fa-solid fa-less-than"></i></div>
+
+        <div class="image-container">
+            <img class="img-tab" src="images/Banner_prewriting.gif" alt="img-1">
+            <img class="img-tab" src="images/drafting.jpg" alt="">
+            <img class="img-tab" src="images/images.png" alt="">
+            <img class="img-tab" src="images/music bg.jpg" alt="">
+            <img class="img-tab" src="images/music trac.gif" alt="">
+            <!-- <li class="img-tab"><img class="img-tab" src="images/music trac.gif" alt=""></li> -->
+            <img class="img-tab" src="images/research.jpg" alt="">
+            <img class="img-tab" src="images/revision.jpg" alt="">
+            <img class="img-tab" src="images/thank you.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>                                                                                                                                                                                                

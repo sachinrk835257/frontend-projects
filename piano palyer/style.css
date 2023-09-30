@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: ; */
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+.container{
+    background-color: #2e2b2b;
+    width: 60vw;
+    /* min-height: 20vw;
+    max-height: 25vw; */
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px black;
+}
+.piano-header{
+    display: flex;
+    /* flex-direction: coumn; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.header{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.volume-slider{
+    font-weight: 600;
+}
+.volume-slider span input{
+    height: 8px;
+    accent-color: #3ddfd7;
+    cursor: pointer;
+}
+.show-keys{
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+.show-keys label{
+    margin-right: 5px;
+    cursor: pointer;
+}
+.show-keys span input{
+    appearance: none;
+    width: 50px;
+    height: 23px;
+    border-radius: 15px;
+    position: relative;
+    background-color: gray;
+    cursor: pointer;
+}
+.show-keys span input::before{
+    /* this is necessary for implementation of before and after pseudo selector */
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(204, 197, 197);
+    transform: translateY(-50%);
+    transition: left 0.3s;
+}
+.show-keys span input:checked::before{
+    left: 30px;
+
+    background-color: white;
+
+}
+.piano-keys{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    user-select: none;
+}
+.piano-keys .key{
+    /* text-align: center; */ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.piano-keys .key span{
+    position: absolute;
+    bottom: 5px;
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.piano-keys .white{
+    /* background-color: white; */
+    background: linear-gradient(to bottom, white 96%,#a59a9a );
+    width: 70px;
+    height: 220px;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+/* .piano-keys .white:active{
+    box-shadow: 0px 0px 2px whitesmoke;
+    background: linear-gradient(to bottom, white 97%,#a59a9a 1% );
+
+} */
+.piano-keys .black{
+    background: linear-gradient(to bottom,black, rgb(112, 107, 107), black);
+    width: 45px;
+    height: 136px;
+    /* position: absolute; */
+    position: relative;
+    border-radius: 0px 0px 5px 5px;
+    margin: 0px -23px;
+    z-index: 2;
+}
+/* .piano-keys .black:active{
+    box-shadow: 0px 0px 5px grey;
+    background: linear-gradient(to bottom,black , rgb(112, 107, 107), rgb(92, 86, 86));
+
+} */
+.active-black{
+    box-shadow: 0px 0px 5px grey;
+    /* background: linear-gradient(45deg,black , rgb(112, 107, 107), rgb(224, 216, 216)); */
+    filter: drop-shadow(2px 4px 6px rgb(171, 207, 228));
+}
+
+.active-white{
+    box-shadow: 0px 0px 2px whitesmoke;
+    /* background: linear-gradient(45deg, white 80%,#afabab 20% ); */
+    filter: drop-shadow(2px 4px 6px rgb(171, 207, 228));
+}

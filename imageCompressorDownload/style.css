@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(98, 221, 221);
+}
+.wrapper{
+    /* border: 2px solid black; */
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 370px
+}
+.upload-box{
+    width: 100%;
+    height: 184px;
+    background-color: #eed6ee;
+    border: 1px dashed black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.upload-box.not-active img{
+    display: none;
+}
+.upload-box img{
+    /* visibility: hidden; */
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.upload-box i{
+    font-size: 3rem;
+}
+.upload-box.active i{
+    display: none;
+}
+.upload-box .upload-text{
+    font-size: 0.85rem;
+    margin-top: 5px;
+    padding: 0px 21px;
+}
+.upload-box.active .upload-text{
+    display: none;
+}
+.column-input-area{
+    display: flex;
+}
+.column-input-area .row{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5px;
+}
+#width-input, #height-input{
+    width: 147px;
+    height: 30px;
+    margin: 5px 0px 10px 0px;
+    padding-left: 5px;
+}
+#width-input:hover{
+    border: rgb(77, 77, 240);
+    box-shadow: 0px 0px 3px rgb(59, 187, 238);
+    padding-left: 5px; 
+}
+#height-input:hover{
+    border: rgb(77, 77, 240);
+    box-shadow: 0px 0px 3px rgb(59, 187, 238);
+}
+
+.checkbox-ratio {
+    width: 12px;
+    height: 12px;
+    accent-color: #f5aaf5;
+    margin-right: 7px;
+    /* display: inline; */
+}
+label p{
+    font-size: 0.95rem;
+}
+.download-btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #ee96ee;
+    font-size: 1rem;
+}
+.download-btn:active{
+    background-color: #f037f0;
+}
+.download-btn:hover{
+    background-color: #ecbbec;
+    border: 1px solid black;
+}
